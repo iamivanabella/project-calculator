@@ -64,4 +64,5 @@ total.onclick = () => {
     secondNum = null;
     operator = null;
     oper.innerHTML = operator;
+    btnOperators.forEach(btnOperator => btnOperator.style.backgroundColor = "rgb(246, 139, 0)");
 };
