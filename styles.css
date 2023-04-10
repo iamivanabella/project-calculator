@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+    height: 650px;
+    width: 400px;
+    background-color: #000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.display{
+    display: flex;
+    padding: 0 2rem;
+}
+input, #oper {
+    color: #fff;
+    font-size: 3rem;
+    width: 100%;
+    background: #000;
+    border: none;
+}
+input {
+    text-align: right;
+}
+input:focus{
+    outline: none;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buttons button {
+    flex-basis: calc(25% - 25px);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 20px 0;
+    margin: 5px;
+    font-size: 1.7rem;
+    background-color: rgb(199, 198, 198);
+}
+.buttons button:hover{
+    background-color: rgb(228, 226, 226);
+}
+
+.buttons .zero {
+    flex-basis: calc(50% - 50px);
+    border-radius: 40px;
+}
+.buttons .operator,
+.buttons .total {
+    background-color: rgb(246, 139, 0);
+}
+.buttons .operator:hover,
+.buttons .total:hover{
+    background-color: rgb(249 176 81);
+}
+.buttons .number, .buttons .decimal {
+    background-color: rgb(68, 68, 68);
+}
+.buttons .number:hover, .buttons .decimal:hover {
+    background-color: rgb(102, 102, 102);
+}
